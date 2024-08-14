@@ -6,7 +6,7 @@ set -o pipefail
 source ./env.sh
 
 if [ "$CONFIRM_RESTORE" = "yes" ]; then
-  echo "Are you sure you want to restore the database? This will overwrite the current database. (yes/no)"
+  echo "DATA LOSS! Are you sure you want to restore the database? This will overwrite the current database. (yes/no)"
   read confirm
   if [ "$confirm" != "yes" ]; then
     echo "Restore cancelled."
