@@ -43,7 +43,7 @@ services:
 
 ### ... from latest backup
 ```sh
-docker exec <container name> sh restore.sh
+docker exec -i <container name> sh restore.sh
 ```
 
 > [!NOTE]
@@ -51,7 +51,7 @@ docker exec <container name> sh restore.sh
 
 ### ... from specific backup
 ```sh
-docker exec <container name> sh restore.sh <timestamp>
+docker exec -i <container name> sh restore.sh <timestamp>
 ```
 
 # Development
